@@ -10,37 +10,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
 </head>
 <body>
     <header>
-
+        <nav class="navbar navbar-inverse navbar-static-top" rol="navigation">
+            <div class="container"></div>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Inicio</a></li>
+                    <li><a href="pages/quienes-somos.html">Quienes somos</a></li>
+                    <li><a href="pages/contactenos.html">Contactenos</a></li>
+                    <li><a href="pages/inicio.html">ingresar al sistema</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
-    <nav class="navbar">
-        <img alt="Menu Hamburgesa" onclick="document.body.classList.toggle('open')" class="burger" src="menu.svg"/>
-        <img alt="Logo ASISMED" src="style/img/logo_asismed.png" />
-      <div class="menu-items">
-        <!-- <div class="search">
-          <input value="Search or jump to..." />
-          <button>/</button>
-        </div> -->
-        <div class="menu menu-left">
-          <a href="index.html">Inicio</a>
-          <a href="pages/quienes-somos.html">Quienes somos</a>
-          <a href="pages/contactenos.html">Contactenos</a>
-          <a href="pages/inicio.html">ingresar al sistema</a>
-        </div>
-      </div>
-      <!-- <div class="menu menu-right">
-        <span class="badge"></span>
-        <img src="bell.svg" />
-        <img src="plus.svg" />
-        <img src="avatar.png" />
-      </div> -->
-    </nav>
     <main>
-        <section></section>
+        <section class="jumbotron">
+            <div class="container">
+                <div class="logo">
+                    <img src="style/img/logo_asismed.png" width="150" height="150" alt="logo_asismed">
+                </div>
+                <h1>ASISMED</h1>
+                <p>Especialistas al servicio de su salud, contamos con el personal calificado y la experiencia para ponerlos a su servicio</p></center>
+            </div>
+            <div class="galeria">
+                <div class="foto">
+                    <img src="style/img/medicina.jpg" alt="">
+                </div>
+                <div class="pie">
+                    <p>Medicina General</p>
+                </div>  
+            </div>
+            <div class="galeria">
+                <div class="foto">
+                    <img src="style/img/vacunacion.jpg" alt="">
+                </div>
+                <div class="pie">
+                    <p>Vacunación</p>
+                </div>  
+            </div>            
+            <div class="galeria">
+                <div class="producto">
+                    <img src="style/img/atecionadulto.jpg" alt="">
+                </div>
+                <div class="pie">
+                    <p>Atención Adulto Mayor</p>
+                </div>
+            </div>
+        </section>
     </main>
     <aside></aside>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="conten-foo">
+                <h3>Asismed</h3>
+                <p>Telefono: 8575421-3148576524</p>
+                <p>Email: <a href="asismed@gmail.com">asismed@gmail.com</a></p>
+                <p>Estamos ubicados en la Cra 10 # 54-21 local 102, centro comercial Unicentro-Bogota</p> 
+                <p>visitanos en nuestras redes sociales</p> 
+                <a target="_blank" href="//www.facebook.com/"><img src="img/logoface.png" width="30" height="30" alt="Logo Facebook"></a>
+                <a target="_blank" href="https://www.instagram.com/"><img src="img/logoins.png" width="30" height="30" alt="Logo Instagram"></a>
+                <a target="_blank" href="https://twitter.com/?lang=es"><img src="img/logotwi.png" width="30" height="30" alt="Logo Twitter"></a>
+                </div>        
+            </div>
+    </footer>
 </body>
 </html>
