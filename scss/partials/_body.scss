@@ -1,0 +1,81 @@
+body{
+    background: var($white-color);
+    font-family: var($body-font-family);    
+    position: relative;
+    padding-top: 94px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var($dark-color);
+    line-height: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var($font-weight-semibold);
+}
+
+h1,
+h2 {
+    font-weight: var($font-weight-bold);
+}
+
+h1 {
+    font-size: var($h1-font-size);
+    line-height: normal;
+}
+
+h2 {
+    font-size: var($h2-font-size);
+}
+
+h3 {
+    font-size: var($h3-font-size);
+}
+
+h4 {
+    font-size: var($h4-font-size);
+}
+
+h5 {
+    font-size: var($h5-font-size);
+}
+
+h6 {
+    font-size: var($h6-font-size);
+}
+
+p {
+    color: var($p-color);
+    font-size: var($p-font-size);
+    font-weight: var($font-weight-light);
+    letter-spacing: 0.5px;
+}
+
+a, 
+button {
+    touch-action: manipulation;
+    transition: all 0.3s;
+}
+
+a {
+    color: var($p-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var($primary-color);
+}
+
+.section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
