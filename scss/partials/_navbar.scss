@@ -1,3 +1,4 @@
+@import "variables";
 .navbar {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -25,11 +26,11 @@
 }
 
 .navbar-nav .nav-link {
-    color: var($p-color);
-    font-weight: var($font-weight-semibold);
-    font-size: var($menu-font-size);
-    padding-top: 15px;
-    padding-bottom: 15px;
+    color:              var($p-color);
+    font-weight:        var($font-weight-semibold);
+    font-size:          var($menu-font-size);
+    padding-top:        15px;
+    padding-bottom:     15px;
 }
 
 .navbar-nav .nav-item.active .nav-link, 
