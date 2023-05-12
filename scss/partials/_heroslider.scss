@@ -9,7 +9,7 @@
 }
 
 .heroText {
-    background: var(--white-color);
+    background: var($white-color);
     position: absolute;
     z-index: 2;
     bottom: 0;
@@ -19,5 +19,5 @@
 }
 
 .contact-phone {
-    font-weight: var(--font-weight-semibold);
+    font-weight: var($font-weight-semibold);
 }

@@ -18,3 +18,10 @@ $font-weight-light:            300;
 $font-weight-normal:           400;
 $font-weight-semibold:         600;
 $font-weight-bold:             700;
+
+body{
+    background: var($white-color);
+    font-family: var($body-font-family);    
+    position: relative;
+    padding-top: 94px;
+}
