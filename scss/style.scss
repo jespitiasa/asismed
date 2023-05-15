@@ -86,7 +86,7 @@ body {
     font-size: var(--h6-font-size);
   }
 
-  p {
+  p, ul {
     color: var(--p-color);
     font-size: var(--p-font-size);
     font-weight: var(--font-weight-light);
@@ -279,7 +279,8 @@ strong {
     line-height: 2rem;
     font-weight: var(--font-weight-bold);
     text-align: center;
-    margin-bottom: 0;
+    // margin-bottom: 0;
+    padding: 2rem;
   }
   .featured-text-name {
     font-size: var(--h6-font-size);
@@ -428,7 +429,7 @@ strong {
   } 
 
   .timeline h3 {
-    background: var(--dark-color);
+    background: var(--primary-color);
   }
 
   .timeline::before {
