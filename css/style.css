@@ -1,9 +1,9 @@
 :root {
-  --white-color: #FFFFFF;
-  --primary-color: #247cff;
-  --section-bg-color: #F9F9F9;
-  --dark-color: #000000;
-  --title-color: #565758;
+  --white-color: #F5F5FA;
+  --primary-color: #247CFF;
+  --section-bg-color: #F5F5FA;
+  --dark-color: #252525;
+  --title-color: #18C3F7;
   --p-color: #717275;
   --border-color: #eaeaea;
   --body-font-family: "Open Sans", sans-serif;
@@ -28,26 +28,16 @@ body {
   padding-top: 94px;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2, h3, h4, h5, h6 {
   color: var(--dark-color);
   line-height: inherit;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: var(--font-weight-semibold);
 }
 
-h1,
-h2 {
+h1, h2 {
   font-weight: var(--font-weight-bold);
 }
 
@@ -83,8 +73,7 @@ p {
   letter-spacing: 0.5px;
 }
 
-a,
-button {
+a, button {
   touch-action: manipulation;
   transition: all 0.3s;
 }
@@ -162,9 +151,6 @@ strong {
   margin-left: auto;
 }
 
-/*---------------------------------------
-  ANIMATED TEXT              
------------------------------------------*/
 .animated {
   position: relative;
 }
@@ -226,9 +212,6 @@ strong {
     opacity: 0;
   }
 }
-/*---------------------------------------
-  HERO              
------------------------------------------*/
 .hero {
   padding-top: 0rem;
 }
@@ -254,9 +237,6 @@ strong {
   font-weight: var(--font-weight-semibold);
 }
 
-/*---------------------------------------
-  FEATURED              
------------------------------------------*/
 .featured-circle {
   border-radius: 100%;
   width: 350px;
@@ -293,9 +273,6 @@ strong {
   margin: 0 10px;
 }
 
-/*---------------------------------------
-  NAVIGATION              
------------------------------------------*/
 .navbar {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -406,11 +383,7 @@ strong {
   top: 8px;
 }
 
-/*---------------------------------------
-  TIMELINE               
------------------------------------------*/
-.timeline,
-.timeline-nodes {
+.timeline, .timeline-nodes {
   position: relative;
 }
 
@@ -518,79 +491,6 @@ strong {
   line-height: 80px;
 }
 
-@media (max-width: 767px) {
-  .timeline-nodes:nth-child(odd) h3,
-  .timeline-nodes:nth-child(odd) p {
-    text-align: left;
-  }
-  .timeline-nodes:nth-child(even) {
-    flex-direction: row;
-  }
-  .timeline::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 60px;
-    left: 33px;
-    width: 0;
-    height: 90%;
-    z-index: 1;
-    transform: translateX(-50%);
-  }
-  .timeline-icons {
-    position: absolute;
-    left: 0%;
-    top: 60px;
-  }
-  .timeline-nodes:nth-child(odd) h3::after {
-    left: auto;
-    right: 100%;
-    border-left: 0;
-    border-right: 10px solid var(--dark-color);
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-  }
-  .timeline-nodes:nth-child(even) h3::after {
-    right: 100%;
-    width: 0;
-    border-right: 10px solid var(--dark-color);
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-  }
-  .timeline-nodes:nth-child(even) .timeline-date {
-    text-align: left;
-  }
-  .timeline-icons::before {
-    width: 75px;
-    height: 75px;
-  }
-  .timeline-icon {
-    line-height: 75px;
-  }
-}
-@media (max-width: 575px) {
-  .timeline::before {
-    content: "";
-    display: block;
-    top: 60px;
-    left: 57px;
-    height: 87%;
-  }
-  .timeline-icons {
-    position: absolute;
-    left: -10px;
-  }
-  .timeline-icons::before {
-    width: 70px;
-    height: 70px;
-  }
-  .timeline-icon {
-    line-height: 70px;
-  }
-}
-/*---------------------------------------
-  REVIEWS               
------------------------------------------*/
 .reviews-thumb {
   margin-bottom: 0;
   padding: 32px;
@@ -675,9 +575,6 @@ strong {
   content: "\f138";
 }
 
-/*---------------------------------------
-  BOOKING FORM            
------------------------------------------*/
 .booking-form .form-control {
   background: transparent;
   border-radius: 0;
@@ -704,9 +601,6 @@ strong {
   background: var(--primary-color);
 }
 
-/*---------------------------------------
-  FOOTER              
------------------------------------------*/
 .site-footer {
   background: var(--section-bg-color);
 }
@@ -715,9 +609,6 @@ strong {
   font-size: var(--menu-font-size);
 }
 
-/*---------------------------------------
-  SOCIAL ICON               
------------------------------------------*/
 .social-icon {
   margin: 0;
   padding: 0;
@@ -747,9 +638,6 @@ strong {
   color: var(--primary-color);
 }
 
-/*---------------------------------------
-  RESPONSIVE STYLES               
------------------------------------------*/
 @media screen and (min-width: 1600px) {
   .hero .container {
     height: 740px;
@@ -829,6 +717,74 @@ strong {
   .reviews-carousel .owl-nav .owl-next {
     right: 0;
     left: 0;
+  }
+  .timeline-nodes:nth-child(odd) h3,
+  .timeline-nodes:nth-child(odd) p {
+    text-align: left;
+  }
+  .timeline-nodes:nth-child(even) {
+    flex-direction: row;
+  }
+  .timeline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 33px;
+    width: 0;
+    height: 90%;
+    z-index: 1;
+    transform: translateX(-50%);
+  }
+  .timeline-icons {
+    position: absolute;
+    left: 0%;
+    top: 60px;
+  }
+  .timeline-nodes:nth-child(odd) h3::after {
+    left: auto;
+    right: 100%;
+    border-left: 0;
+    border-right: 10px solid var(--dark-color);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  .timeline-nodes:nth-child(even) h3::after {
+    right: 100%;
+    width: 0;
+    border-right: 10px solid var(--dark-color);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  .timeline-nodes:nth-child(even) .timeline-date {
+    text-align: left;
+  }
+  .timeline-icons::before {
+    width: 75px;
+    height: 75px;
+  }
+  .timeline-icon {
+    line-height: 75px;
+  }
+}
+@media (max-width: 575px) {
+  .timeline::before {
+    content: "";
+    display: block;
+    top: 60px;
+    left: 57px;
+    height: 87%;
+  }
+  .timeline-icons {
+    position: absolute;
+    left: -10px;
+  }
+  .timeline-icons::before {
+    width: 70px;
+    height: 70px;
+  }
+  .timeline-icon {
+    line-height: 70px;
   }
 }
 @media screen and (max-width: 480px) {
