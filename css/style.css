@@ -172,7 +172,7 @@ strong {
   overflow: hidden;
   position: absolute;
   top: 0;
-  right: 0;
+  right: -90px;
   left: 0;
   animation: BottomTotop 6s linear infinite 0s;
 }
