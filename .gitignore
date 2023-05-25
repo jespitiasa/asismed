@@ -1,2 +1,11 @@
+# ignore all .text.txt files
 /text.txt
+# ignore all directories with the name node_modules
 node_modules/
+# ignores all .md files
+*.md
+# add .env file to .gitignore
+echo ".env" >> .gitignore
+
+# add node_modules/ file to .gitignore
+echo "node_modules/" >> .gitignore
